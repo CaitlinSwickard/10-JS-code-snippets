@@ -1,0 +1,1 @@
+// This is 10 JavaScript code snippets boiler plate to practice 
