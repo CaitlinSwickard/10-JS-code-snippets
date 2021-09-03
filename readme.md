@@ -1,3 +1,5 @@
+![ScreenShot](images/js_snippets.png)
+
 # 10 JavaScript functions to use everyday
 
 
