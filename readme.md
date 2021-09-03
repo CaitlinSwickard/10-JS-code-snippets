@@ -9,7 +9,7 @@ This project is a boiler plate of functions used often by developers. The goal o
 To see functions working in the console:
 - open up a web page
 - right click to inspect, and open up dev tools
-- copy and past code in the console and press enter 
+- copy and paste code in the console and press enter 
 - you should see the console log for the function you pasted
 
 
