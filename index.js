@@ -45,6 +45,7 @@ console.log(arr);
 // returns [1, 5, 22, 31, 1098, 10009]
 // ----------------------------------------------------------------
 
+
 // 3:
 // String reverse
 // 3 different ways: reverse using basic function, reverse using a loop, recursion function
@@ -78,6 +79,7 @@ console.log(reverse('Matt'));
 // returns 'ttaM'
 // ----------------------------------------------------------------
 
+
 // 4:
 // Finding largest num of an array, Math.max and looping
 
@@ -108,9 +110,38 @@ let arrOne = [1, 3, 5]
 let arrTwo = [2, 4, 6]
 let combine = arrOne.concat(arrTwo)
 console.log(combine);
+// return [1, 3, 5, 2, 4, 6]
 
 // spread operator
 let arrOne = [1, 3, 5]
 let arrTwo = [2, 4, 6]
 combine = [...arrOne,...arrTwo]
 console.log(combine);
+// return [1, 3, 5, 2, 4, 6]
+// --------------------------------------------------------------
+
+
+// 6:
+// Error handling
+// try catch statements work for the exception handler. Code goes into the try block,
+// if ok the try block will execute, otherwise the catch block will execute with error reporting.
+try {
+  try_statement
+} catch (err) {
+  catch_statement
+};
+// --------------------------------------------------------------
+
+
+// 7:
+// Most repeated number in an array 
+// this function will help you find the most repeated element of an array
+const mostRepeated = (array) => {
+  return array.sort((a, b) =>
+  array.filter(v => v===a).length
+  - array.filter(v => v===b).length
+  ).pop();
+};
+
+console.log(mostRepeated([ 'pizza', 'burger', 'pizza', 'salad', 'taco']));
+// returns 'pizza'
