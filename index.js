@@ -76,3 +76,41 @@ const reverse = (string) => {
 }
 console.log(reverse('Matt'));
 // returns 'ttaM'
+// ----------------------------------------------------------------
+
+// 4:
+// Finding largest num of an array, Math.max and looping
+
+// math.max
+const array1 = [1, 4, 5, 2, 3];
+console.log(Math.max(...array1));
+// returns 5
+
+// looping through array
+const array = [1, 4, 5, 2, 3];
+var largest = 0;
+
+    for (i=0; i<array.length; i++) {
+    if (array[i]>largest) {
+        largest = array[i];
+    }
+}
+console.log(largest);
+// returns 5
+
+
+// 5: 
+// Merge arrays
+// using concat() function and spread operator(...)
+
+// concat
+let arrOne = [1, 3, 5]
+let arrTwo = [2, 4, 6]
+let combine = arrOne.concat(arrTwo)
+console.log(combine);
+
+// spread operator
+let arrOne = [1, 3, 5]
+let arrTwo = [2, 4, 6]
+combine = [...arrOne,...arrTwo]
+console.log(combine);
