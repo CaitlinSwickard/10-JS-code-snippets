@@ -145,3 +145,69 @@ const mostRepeated = (array) => {
 
 console.log(mostRepeated([ 'pizza', 'burger', 'pizza', 'salad', 'taco']));
 // returns 'pizza'
+// --------------------------------------------------------------
+
+
+// 8:
+// Swap values
+let a = 50, b = 16;
+[a, b] = [b, a];
+console.log(a, b)
+// returns 16, 50
+// --------------------------------------------------------------
+
+
+// 9:
+// Function chaining
+// Function chaining is a pattern in JavaScript where multiple functions are called on the same object consecutively. 
+// Using the same object reference, multiple functions can be invoked. 
+// It increases the readability of the code and means less redundancy.
+const object = {
+  res: 0,
+  add: function(a, b) {
+    this.res = a + b;
+    return this;
+  },
+
+  multiply: function(a) {
+    this.res = this.res * a;
+    return this;
+  }
+};
+
+object.add(5, 10).multiply(10)
+console.log(object.res);
+// returns 150
+// --------------------------------------------------------------
+
+
+// 10:
+// Loop through an object
+
+// using the for...in loop to iterate over an object
+const person = {
+  Name: 'Caitlin', 
+  Age: 34, 
+  Email: 'caitlin@gmail.com'
+};
+
+for (const key in person) {
+  console.log(`${key}: ${person[key]}`);
+}
+// returns Name: Caitlin, Age: 34, Email: caitlin@gmail.com
+
+//  using the Object.key method then using the forEach method to iterate through the array
+const courses = {
+  javaScript: 10,
+  nodejs: 5,
+  CSS: 15,
+};
+
+const keys = Object.keys(courses);
+console.log(keys)
+// returns ['javaScript', 'nodejs', 'CSS']
+
+keys.forEach((key, index) => {
+  console.log(`${key}: ${courses[key]}`);
+});
+// returns javaScript: 10, nodejs: 5, CSS: 15
